@@ -14,43 +14,47 @@
 </head>
 
 <body class="font-inter">
-    <header class="max-w-7xl mx-auto py-4 px-20">
+    <header class="max-w-7xl mx-auto py-4 px-7 sm:px-12 lg:px-20">
         <nav class="flex justify-between items-center">
             <h2 class="font-semibold">
                 Ai-shorts <span class="text-brend-primary-500">BETA</span>
             </h2>
-            <ul class="flex items-center gap-8">
-                <li>
-                    <a href="#" class="text-gray-500">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="text-gray-500 flex items-center gap-3">
-                        Products
-                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.5 1.5L6.5 6.5L11.5 1.5" stroke="#667085" stroke-width="1.67"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="text-gray-500 flex items-center gap-3">
-                        Resources
-                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.5 1.5L6.5 6.5L11.5 1.5" stroke="#667085" stroke-width="1.67"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="text-gray-500">
-                        Pricing
-                    </a>
-                </li>
-            </ul>
-            <div>
-                <button class="bg-white border-none text-gray-500 font-semibold p-3">
+            <div class="hidden md:block">
+                <ul class="flex items-center gap-8">
+                    <li>
+                        <a href="#" class="text-gray-500">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 flex items-center gap-3">
+                            Products
+                            <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 1.5L6.5 6.5L11.5 1.5" stroke="#667085" stroke-width="1.67"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500 flex items-center gap-3">
+                            Resources
+                            <svg width="13" height="8" viewBox="0 0 13 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 1.5L6.5 6.5L11.5 1.5" stroke="#667085" stroke-width="1.67"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-500">
+                            Pricing
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center">
+                <button class="hidden sm:block bg-white border-none text-gray-500 font-semibold p-3">
                     Log in
                 </button>
                 <button
@@ -60,9 +64,9 @@
             </div>
         </nav>
     </header>
-    <div class="max-w-7xl mx-auto py-24">
+    <div class="max-w-7xl mx-auto py-10 sm:py-24">
         <div class="flex flex-col justify-center max-w-5xl mx-auto text-center">
-            <h1 class="font-semibold text-6xl">
+            <h1 class="font-semibold text-4xl sm:text-6xl">
                 Make short Ai-generated videos with a few clicks
             </h1>
             <p class="text-gray-500 text-xl max-w-3xl mx-auto mt-6">
@@ -87,7 +91,7 @@
             <img src="./image/hero-image.png" alt="hero-image" class="mt-16">
         </div>
     </div>
-    <div class="py-24">
+    <div class="py-10 sm:py-24">
         <div class="max-w-3xl mx-auto text-center">
             <p class="text-brend-primary-700">
                 Features
@@ -99,7 +103,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius enim euismod dolor mollis dictum.
             </p>
         </div>
-        <div class="grid grid-cols-2 gap-24 items-center max-w-7xl mx-auto px-8 py-12">
+        <div class="grid sm:grid-cols-2 gap-24 items-center max-w-7xl mx-auto px-8 py-12">
             <div>
                 <div class="bg-brend-primary-100 rounded-full inline-block p-3">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -157,8 +161,8 @@
             </div>
             <img src="./image/main-image.png" alt="main-image">
         </div>
-        <div class="grid grid-cols-2 gap-24 items-center max-w-7xl mx-auto px-8 py-12">
-            <img src="./image/main-image.png" alt="main-image">
+        <div class="grid sm:grid-cols-2 gap-24 items-center max-w-7xl mx-auto px-8 py-12">
+            <img src="./image/main-image.png" alt="main-image" class="hidden sm:block">
             <div>
                 <div class="bg-brend-primary-100 rounded-full inline-block p-3">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +219,7 @@
                 </ul>
             </div>
         </div>
-        <div class="grid grid-cols-2 gap-24 items-center max-w-7xl mx-auto px-8 py-12">
+        <div class="grid sm:grid-cols-2 gap-24 items-center max-w-7xl mx-auto px-8 py-12">
             <div>
                 <div class="bg-brend-primary-100 rounded-full inline-block p-3">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -291,7 +295,7 @@
             </div>
         </div>
     </div>
-    <div class="max-w-7xl mx-auto py-24">
+    <div class="max-w-7xl mx-auto py-10 sm:py-24">
         <div class="max-w-3xl mx-auto text-center">
             <div class="bg-brend-primary-100 rounded-full inline-block p-3">
                 <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -307,7 +311,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius enim euismod dolor mollis
                 dictum.
             </p>
-            <div class="flex items-center justify-center mt-16">
+            <div class="sm:flex items-center space-y-4 justify-center mt-16">
                 <div class="px-4">
                     <h2 class="text-6xl text-brend-primary-600 font-semibold">
                         XXX
@@ -316,7 +320,7 @@
                         Lorem ipsum
                     </p>
                 </div>
-                <div class="border-x-gray-300 border border-y-0 px-4">
+                <div class="sm:border-x-gray-300 sm:border sm:border-y-0 px-4">
                     <h2 class="text-6xl text-brend-primary-600 font-semibold">
                         XXXX
                     </h2>
@@ -335,7 +339,8 @@
             </div>
         </div>
     </div>
-    <div class="mx-auto max-w-5xl flex justify-between items-start rounded-2xl bg-brend-primary-50 p-16">
+    <div
+        class="mx-auto max-w-5xl sm:flex space-y-4 justify-between items-start rounded-2xl bg-brend-primary-50 p-12 sm:p-16">
         <div class="">
             <h2 class="font-semibold text-2xl text-brend-primary-900">
                 Start your 30-day free trial
@@ -365,7 +370,7 @@
                 dictum.
             </p>
         </div>
-        <div class="max-w-3xl mx-auto mt-16">
+        <div class="max-w-3xl mx-auto mt-16 px-4">
             <div class="pb-8 pt-6 flex justify-between">
                 <div class="">
                     <h2 class="text-gray-900 font-medium">
@@ -441,7 +446,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-col items-center mx-auto max-w-5xl rounded-2xl bg-gray-50 p-16 mt-16">
+        <div class="flex flex-col items-center mx-auto max-w-5xl rounded-2xl bg-gray-50 p-12 sm:p-16 mt-16">
             <img src="./image/Avatar-group.png" alt="Avatar-group">
             <div class="text-center mt-8">
                 <h2 class="font-medium text-xl">
@@ -456,8 +461,8 @@
             </button>
         </div>
     </div>
-    <div class="relative pt-24">
-        <div class="grid grid-cols-2 gap-24 items-center max-w-7xl mx-auto px-8 pt-12 pb-24">
+    <div class="relative sm:pt-24">
+        <div class="grid sm:grid-cols-2 gap-24 items-center max-w-7xl mx-auto px-8 sm:pt-12 pb-24">
             <div>
                 <h3 class="font-semibold text-5xl mt-6">
                     Fullscale production - powered by Ai
@@ -513,7 +518,7 @@
                     </button>
                 </div>
             </div>
-            <img src="./image/footer-image.png" alt="main-image" class="absolute right-0">
+            <img src="./image/footer-image.png" alt="main-image" class="xl:absolute right-0">
         </div>
     </div>
     <div class="text-center bg-gray-50 py-24">

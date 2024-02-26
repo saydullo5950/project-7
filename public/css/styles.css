@@ -541,6 +541,9 @@ video {
 .grid {
   display: grid;
 }
+.hidden {
+  display: none;
+}
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -584,6 +587,16 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 .rounded-2xl {
   border-radius: 1rem;
@@ -654,9 +667,8 @@ video {
 .p-3 {
   padding: 0.75rem;
 }
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
+.p-12 {
+  padding: 3rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -689,6 +701,10 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .pb-24 {
   padding-bottom: 6rem;
@@ -776,4 +792,83 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+@media (min-width: 640px) {
+
+  .sm\:absolute {
+    position: absolute;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:border {
+    border-width: 1px;
+  }
+
+  .sm\:border-y-0 {
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+  }
+
+  .sm\:border-x-gray-300 {
+    --tw-border-opacity: 1;
+    border-left-color: rgb(209 213 219 / var(--tw-border-opacity));
+    border-right-color: rgb(209 213 219 / var(--tw-border-opacity));
+  }
+
+  .sm\:p-16 {
+    padding: 4rem;
+  }
+
+  .sm\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .sm\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .sm\:pt-12 {
+    padding-top: 3rem;
+  }
+
+  .sm\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+@media (min-width: 768px) {
+
+  .md\:block {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+@media (min-width: 1280px) {
+
+  .xl\:absolute {
+    position: absolute;
+  }
 }
